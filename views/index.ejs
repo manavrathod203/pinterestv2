@@ -1,0 +1,31 @@
+<% include ./partials/header.ejs %>
+
+<!-- <div class="w-full h-screen bg-blue-300 flex justify-center items-center">
+  <form action="/login" method="post" class="flex flex-col gap-2 bg-zinc-100 p-5 w-72">
+    <h1 class="text-2xl text-center">Login to pinterest</h1>
+    <input type="text" class="border" placeholder="Username" name="username">
+    <input type="password" class="border-black" placeholder="Password" name="password">
+    <input type="submit" class="bg-zinc-700 text-white" value="Login">
+    <a href="/register" class="text-center">Create new account</a>
+  </form>
+</div> -->
+
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center bg-cover bg-center	 bg-[url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+  <div class="w-[35vw] bg-zinc-100 px-[6vw] py-7 rounded-[40px] shadow-xl">
+    <h1 class="text-3xl leading-none text-center font-semibold">Welcome to pinterest.</h1>
+    <form action="/login" method="post" class="mt-5">
+      <input class="border-2 block mt-3 rounded-md w-full px-3 py-2" type="text" name="username" placeholder="username">
+      <input class="border-2 block mt-3 rounded-md w-full px-3 py-2" type="password" name="password" placeholder="password">
+      <a href="#" class="block mt-2">Forgot password?</a>
+      <input class="block mt-3 rounded-full w-full px-3 py-2 bg-red-600 text-white" type="submit" value="Login">
+
+    </form>
+    <p class="text-xs text-center w-72 mx-auto  font-semibold text-zinc-600 mt-6">By continuing, you agree to
+      Pinterest's Terms of Service and acknowledge you've read our Privacy Policy. Notice at collection.</p>
+    <a href="./register" class="block text-xs text-center mx-auto text-black font-bold mt-6">Not on pinterest? Sign
+      up</a>
+  </div>
+</div>
+
+
+<% include ./partials/footer.ejs %>
